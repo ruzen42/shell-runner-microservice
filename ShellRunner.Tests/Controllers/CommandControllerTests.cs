@@ -4,7 +4,7 @@ using ShellRunner.Controllers;
 using ShellRunner.Models;
 using Xunit;
 
-namespace ShellRunner.ShellRunner.Tests;
+namespace ShellRunner.ShellRunner.Tests.Controllers;
 
 public class CommandControllerTests
 {

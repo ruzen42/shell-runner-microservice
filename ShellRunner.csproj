@@ -9,10 +9,7 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.8" />
-      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
-      <PackageReference Include="Moq" Version="4.20.72" />
       <PackageReference Include="NeoSimpleLogger" Version="1.4.0" />
-      <PackageReference Include="xunit" Version="2.9.3" />
+      <Compile Remove="**/*Tests.cs" />
     </ItemGroup>
-
 </Project>

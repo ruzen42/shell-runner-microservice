@@ -1,4 +1,4 @@
-﻿FROM ubuntu:24.04 AS base
+﻿FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base 
 WORKDIR /app
 EXPOSE 8080
 
@@ -13,9 +13,9 @@ RUN dotnet build "./ShellRunner.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./ShellRunner.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false /p:PublishAot=true
+RUN dotnet publish "./ShellRunner.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:AppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["ShellRunner"]
+ENTRYPOINT ["dotnet", "ShellRunner.dll"]
