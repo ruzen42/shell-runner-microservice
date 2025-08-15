@@ -50,6 +50,8 @@ public class CommandController(ILogger<CommandController> logger) : ControllerBa
             
             return Ok(new CommandResponse
             {
+                Error = "Error with HTTP response: " + e.Message,
+                Output = "",
                 ExitCode = 1,
                 Context = request
             });
