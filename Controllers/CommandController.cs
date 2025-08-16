@@ -41,7 +41,6 @@ public class CommandController(ILogger<CommandController> logger) : ControllerBa
                 Output = output,
                 Error = error,
                 ExitCode = process.ExitCode,
-                Context = request
             });
         }
         catch (Exception e)
@@ -52,8 +51,7 @@ public class CommandController(ILogger<CommandController> logger) : ControllerBa
             {
                 Error = "Error with HTTP response: " + e.Message,
                 Output = "",
-                ExitCode = 1,
-                Context = request
+                ExitCode = 1
             });
         }
     }

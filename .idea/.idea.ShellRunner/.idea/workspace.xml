@@ -11,9 +11,6 @@
     <list default="true" id="b294b12b-6063-42a6-a4be-6511e276fedd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShellRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShellRunner/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/CommandController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CommandController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/CommandResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/CommandResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,18 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ruzen42"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ruzen42&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ruzen42/shell-runner-microservice.git",
-    "accountId": "4e4be261-91aa-4454-a375-1870978ddc62"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ruzen42/shell-runner-microservice.git&quot;,
+    &quot;accountId&quot;: &quot;4e4be261-91aa-4454-a375-1870978ddc62&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ShellRunner.Tests/Controllers/CommandControllerTests.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -135,6 +132,7 @@
       <updated>1755177065441</updated>
       <workItem from="1755177065443" duration="10011000" />
       <workItem from="1755277442127" duration="2174000" />
+      <workItem from="1755318817152" duration="19000" />
     </task>
     <servers />
   </component>
