@@ -35,24 +35,13 @@ public class CommandController(ILogger<CommandController> logger) : ControllerBa
             await process.WaitForExitAsync();
             
             logger.LogInformation("Received command:\n {Context}", request);
-            
-            return Ok(new CommandResponse
-            {
-                Output = output,
-                Error = error,
-                ExitCode = process.ExitCode,
-            });
+
+            return Ok(new CommandResponse(output, error, process.ExitCode));
         }
         catch (Exception e)
         {
             logger.LogError("Error: {EMessage}", e.Message);
-            
-            return Ok(new CommandResponse
-            {
-                Error = "Error with HTTP response: " + e.Message,
-                Output = "",
-                ExitCode = 1
-            });
+            return Ok(new CommandResponse("", "Error with HTTP response: " + e.Message, 1));
         }
     }
 }
