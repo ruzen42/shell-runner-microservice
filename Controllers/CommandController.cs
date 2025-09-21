@@ -9,9 +9,9 @@ namespace ShellRunner.Controllers;
 public class CommandController(ILogger<CommandController> logger) : ControllerBase
 {
     [HttpPost("execute")]
-    public async Task<IActionResult> ExecuteCommand([FromBody] CommandRequest request)
+    public async Task<IActionResult> ExecuteCommand([FromBody] CommandModels models)
     {
-        if (string.IsNullOrEmpty(request.Command))
+        if (string.IsNullOrEmpty(models.Command))
             return BadRequest("Command cannot be empty");
 
         try
@@ -21,7 +21,7 @@ public class CommandController(ILogger<CommandController> logger) : ControllerBa
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = "/bin/bash",
-                    Arguments = $"-c \"{request.Command}\"",
+                    Arguments = $"-c \"{models.Command}\"",
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
                     UseShellExecute = false,
@@ -34,7 +34,7 @@ public class CommandController(ILogger<CommandController> logger) : ControllerBa
             var error = await process.StandardError.ReadToEndAsync();
             await process.WaitForExitAsync();
             
-            logger.LogInformation("Received command:\n {Context}", request.ToString());
+            logger.LogInformation("Received command:\n {Context}", models.ToString());
             var response = new CommandResponse(output, error, process.ExitCode);
             logger.LogInformation((response with { Output = output[..(output.Length/2)] }).ToString());
             return Ok(response);

@@ -11,7 +11,8 @@
     <list default="true" id="b294b12b-6063-42a6-a4be-6511e276fedd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShellRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShellRunner/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/CommandController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CommandController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/CommandResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/CommandResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/CommandRequest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/CommandResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/CommandModels.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +138,7 @@
       <workItem from="1755177065443" duration="10011000" />
       <workItem from="1755277442127" duration="2174000" />
       <workItem from="1755318817152" duration="40000" />
-      <workItem from="1758432362984" duration="2875000" />
+      <workItem from="1758432362984" duration="4658000" />
     </task>
     <servers />
   </component>
