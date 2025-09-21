@@ -34,9 +34,10 @@ public class CommandController(ILogger<CommandController> logger) : ControllerBa
             var error = await process.StandardError.ReadToEndAsync();
             await process.WaitForExitAsync();
             
-            logger.LogInformation("Received command:\n {Context}", request);
-
-            return Ok(new CommandResponse(output, error, process.ExitCode));
+            logger.LogInformation("Received command:\n {Context}", request.ToString());
+            var response = new CommandResponse(output, error, process.ExitCode);
+            logger.LogInformation((response with { Output = output[..(output.Length/2)] }).ToString());
+            return Ok(response);
         }
         catch (Exception e)
         {
