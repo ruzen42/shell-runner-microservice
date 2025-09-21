@@ -11,4 +11,4 @@ var app = builder.Build();
 app.MapControllers();
 app.Map("/", () => "Use http://host:5000/api/command/execute\nwith POST request\nExample request \n{\n  \"command\": \"ls -la\",\n  \"userId\": 32132,\n  \"chatId\": 3231\n}");
 
-app.Run();
+await app.RunAsync();
