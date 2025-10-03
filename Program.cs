@@ -1,9 +1,11 @@
 using NeoSimpleLogger;
+using ShellRunner.Services;
 
 var builder = WebApplication.CreateBuilder();
 
 builder.Logging.ClearProviders();
 builder.Logging.AddProvider(new LoggerProvider());
+builder.Services.AddScoped<IProcessRunner, ProcessRunner>();
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
