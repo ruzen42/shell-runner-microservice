@@ -11,5 +11,8 @@
       <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.8" />
       <PackageReference Include="NeoSimpleLogger" Version="1.4.0" />
       <Compile Remove="**/*Tests.cs" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.6" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.6" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.6" />
     </ItemGroup>
 </Project>

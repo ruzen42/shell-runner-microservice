@@ -11,8 +11,8 @@
     <list default="true" id="b294b12b-6063-42a6-a4be-6511e276fedd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShellRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShellRunner/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/CommandController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CommandController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/CommandRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/CommandResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/CommandModels.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShellRunner.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ShellRunner.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +31,12 @@
     &quot;assignee&quot;: &quot;ruzen42&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ruzen42/shell-runner-microservice.git",
-    "accountId": "c886c500-972f-42f6-a79d-78f14742d90a"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ruzen42/shell-runner-microservice.git&quot;,
+    &quot;accountId&quot;: &quot;c886c500-972f-42f6-a79d-78f14742d90a&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ShellRunner.Tests/Controllers/CommandControllerTests.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -48,24 +48,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.ShellRunner: http.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "devel",
-    "last_opened_file_path": "/home/ruzen42/src/githubAPIService",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.ShellRunner: http.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;devel&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ruzen42/src/githubAPIService&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ShellRunner: http">
     <configuration name="ShellRunner: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ShellRunner.csproj" />
@@ -138,7 +138,8 @@
       <workItem from="1755177065443" duration="10011000" />
       <workItem from="1755277442127" duration="2174000" />
       <workItem from="1755318817152" duration="40000" />
-      <workItem from="1758432362984" duration="4658000" />
+      <workItem from="1758432362984" duration="4781000" />
+      <workItem from="1759493845012" duration="1277000" />
     </task>
     <servers />
   </component>

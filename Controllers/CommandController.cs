@@ -5,10 +5,10 @@ using ShellRunner.Models;
 namespace ShellRunner.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/")]
 public class CommandController(ILogger<CommandController> logger) : ControllerBase
 {
-    [HttpPost("execute")]
+    [HttpPost]
     public async Task<IActionResult> ExecuteCommand([FromBody] CommandModels models)
     {
         if (string.IsNullOrEmpty(models.Command))

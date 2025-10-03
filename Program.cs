@@ -6,9 +6,18 @@ builder.Logging.ClearProviders();
 builder.Logging.AddProvider(new LoggerProvider());
 builder.Services.AddControllers();
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
 
+// Настройка Swagger UI
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+});
+
 app.MapControllers();
-app.Map("/", () => "Use http://host:5000/api/command/execute\nwith POST request\nExample request \n{\n  \"command\": \"ls -la\",\n  \"userId\": 32132,\n  \"chatId\": 3231\n}");
 
 await app.RunAsync();
