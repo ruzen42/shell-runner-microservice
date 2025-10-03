@@ -8,16 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b294b12b-6063-42a6-a4be-6511e276fedd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/IProcessRunner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/ProcessRunner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShellRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShellRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/CommandController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/CommandModels.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/QueryModels.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShellRunner.Tests/Controllers/CommandControllerTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShellRunner.Tests/ShellRunner.Tests.csproj" beforeDir="false" />
-    </list>
+    <list default="true" id="b294b12b-6063-42a6-a4be-6511e276fedd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +137,7 @@
       <workItem from="1755318817152" duration="40000" />
       <workItem from="1758432362984" duration="4781000" />
       <workItem from="1759493845012" duration="1549000" />
-      <workItem from="1759509725778" duration="1017000" />
+      <workItem from="1759509725778" duration="1768000" />
     </task>
     <servers />
   </component>

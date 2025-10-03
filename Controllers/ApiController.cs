@@ -8,21 +8,37 @@ namespace ShellRunner.Controllers;
 [Route("api/")]
 public class ApiController(ILogger<ApiController> logger, IProcessRunner processRunner) : ControllerBase
 {
-    [HttpGet]
-    public async Task<IActionResult> ExecuteCommand([FromQuery] QueryRequest models)
+    [HttpPost] 
+    public async Task<IActionResult> ExecuteCommand([FromBody] QueryRequest request)
     {
-        if (string.IsNullOrEmpty(models.Command))
+        if (string.IsNullOrEmpty(request.Command))
             return BadRequest("Command cannot be empty");
+
+        if (request.Command.Length > 100) 
+            return BadRequest("Command too long");
 
         try
         {
-            logger.LogInformation("Received command:\n {Context}", models.ToString());
-            return Ok(await processRunner.RunCommand(models.Command));
+            logger.LogInformation("Received command execution request");
+            var result = await processRunner.RunCommand(request.Command);
+            
+            if (result.ExitCode == 0)
+            {
+                logger.LogInformation("Command executed successfully");
+                return Ok(result);
+            }
+
+            logger.LogWarning("Command execution failed with exit code: {ExitCode}", result.ExitCode);
+            return BadRequest(result);
         }
         catch (Exception e)
         {
-            logger.LogError("Error: {EMessage}", e.Message);
-            return Problem(new QueryResponse("", "Error with HTTP response: " + e.Message, 1).ToString());
+            logger.LogError(e, "Error executing command");
+            return Problem(
+                detail: $"Error executing command: {e.Message}",
+                statusCode: StatusCodes.Status500InternalServerError
+            );
         }
     }
+
 }
