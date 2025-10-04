@@ -4,14 +4,14 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": false,
-      "applicationUrl": "http://0.0.0.0:8080",
+      "applicationUrl": "http://localhost:8081",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCORE_URLS": "http://0.0.0.0:8080"
+        "ASPNETCORE_URLS": "http://localhost:8081"
       }
     },
     "Docker": {
       "commandName": "Docker",
+      "applicationUrl": "http://localhost:80",
       "launchBrowser": false,
       "publishAllPorts": true,
       "useSSL": false
