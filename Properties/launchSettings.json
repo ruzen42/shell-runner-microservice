@@ -11,7 +11,7 @@
     },
     "Docker": {
       "commandName": "Docker",
-      "applicationUrl": "http://localhost:80",
+      "applicationUrl": "http://localhost:8081",
       "launchBrowser": false,
       "publishAllPorts": true,
       "useSSL": false
